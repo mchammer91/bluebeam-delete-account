@@ -1,0 +1,14 @@
+<div fxLayout="row" fxLayoutAlign="end center">
+  <button mat-button mat-dialog-close>X</button>
+</div>
+
+<div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+  <img class="modal-picture" src="../../../assets/shocker.png" flex="100">
+  <mat-dialog-content>Are you sure you want to delete your account?</mat-dialog-content>
+</div>
+
+
+<mat-dialog-actions fxLayout="row" fxLayoutAlign="end end" fx>
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Delete</button>
+</mat-dialog-actions>
